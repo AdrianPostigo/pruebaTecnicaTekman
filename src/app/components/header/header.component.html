@@ -11,7 +11,7 @@
         </div>
         <div class="my-4">
           <select name="course" id="course" ngModel class="form-select">
-            <option *ngFor="let courseOption of this.optionsInfo.course" value="{{courseOption.idCourse}}">{{courseOption.courseName}}</option>
+            <option *ngFor="let courseOption of this.optionsInfo.course" [value]="courseOption.idCourse">{{courseOption.courseName}}</option>
           </select>
         </div>
         <input type="submit" class="btn btn-danger mt-2" value="Guardar cambios">
