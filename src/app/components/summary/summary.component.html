@@ -1,0 +1,18 @@
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <div class="icon__back_container">
+    <a class="icon__text" [routerLink]="['/dashboard']"><img class="icon__arrow" src="../../../assets/img/icons/arrow_back.png" alt="icon_arrow"> Atrás</a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <app-summary-card [info]="this.infoTrimester"></app-summary-card>
+      </div>
+      <div class="col-9">
+        <app-details-summary-card [infoDetails]="this.infoTrimester"></app-details-summary-card>
+      </div>
+    </div>
+  </div>
+</main>

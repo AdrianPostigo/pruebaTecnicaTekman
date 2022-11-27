@@ -1,0 +1,15 @@
+{
+  "currentLanguage": "español",
+  "currentLang": "esp",
+  "currentCourseId": "1111",
+  "currentCourseName": "3º de infantil",
+  "languageOptions": [
+    {"language": "español", "lang": "esp"},
+    {"language": "ingles", "lang": "eng"}
+  ],
+  "course": [
+    {"idCourse": "1111", "courseName": "3º de infantil"},
+    {"idCourse": "1112", "courseName": "4º de infantil"},
+    {"idCourse": "1113", "courseName": "5º de infantil"}
+  ]
+}

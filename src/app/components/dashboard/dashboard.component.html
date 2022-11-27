@@ -1,0 +1,16 @@
+<header>
+  <app-header></app-header>
+</header>
+<main>
+  <section>
+    <app-main-card [infoStudent]="this.arrStudent[0].student"></app-main-card>
+  </section>
+  <section class="container">
+    <h3>Temario</h3>
+    <div class="row">
+      <article *ngFor="let student of this.arrStudent[0].student.trimestersDetails" class="col-3">
+        <app-summary-card [info]="student"></app-summary-card>
+      </article>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,58 @@
+  [
+    {
+    "student":
+    {
+      "id": 1,
+      "studentName": "Estudiante 1",
+      "subject": "Matematicas",
+      "nTrimesters": 3,
+      "currentTrimesterId": 12,
+      "currentThemeId": 123,
+      "trimestersDetails":
+      [
+        {
+          "trimesterId": 11,
+          "trimesterName": "1º Trimestre",
+          "nThemes": 5,
+          "nThemesCompletes": 5,
+          "themesDetails":
+          [
+            {"themeId": 111, "themeName": "theme 1", "isCompleted": 1},
+            {"themeId": 112, "themeName": "theme 2", "isCompleted": 1},
+            {"themeId": 113, "themeName": "theme 3", "isCompleted": 1},
+            {"themeId": 114, "themeName": "theme 4", "isCompleted": 1},
+            {"themeId": 115, "themeName": "theme 5", "isCompleted": 1}
+          ]
+        },
+        {
+          "trimesterId": 12,
+          "trimesterName": "2º Trimestre",
+          "nThemes": 5,
+          "nThemesCompletes": 2,
+          "themesDetails":
+          [
+            {"themeId": 121, "themeName": "theme 1", "isCompleted": 1},
+            {"themeId": 122, "themeName": "theme 2", "isCompleted": 1},
+            {"themeId": 123, "themeName": "theme 3", "isCompleted": 0},
+            {"themeId": 124, "themeName": "theme 4", "isCompleted": 0},
+            {"themeId": 125, "themeName": "theme 5", "isCompleted": 0}
+          ]
+        },
+        {
+          "trimesterId": 13,
+          "trimesterName": "3º Trimestre",
+          "nThemes": 5,
+          "nThemesCompletes": 0,
+          "themesDetails":
+          [
+            {"themeId": 131, "themeName": "theme 1", "isCompleted": 1},
+            {"themeId": 132, "themeName": "theme 2", "isCompleted": 1},
+            {"themeId": 133, "themeName": "theme 3", "isCompleted": 0},
+            {"themeId": 134, "themeName": "theme 4", "isCompleted": 0},
+            {"themeId": 135, "themeName": "theme 5", "isCompleted": 0}
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+<div class="card main__card">
+  <div class="card-body">
+    <h5 class="card-title">Vuelve donde lo dejaste</h5>
+    <p class="card-text">{{this.currentTrimester}} - {{this.currentTheme}}</p>
+    <div class="row">
+      <div class="col-4">
+        <a class="btn btn-primary" [routerLink]="['/summary', currentIdTrimester, this.currentIdTheme]">Go somewhere</a>
+      </div>
+      <div class="col-4">
+        <a class="btn btn-primary" [routerLink]="['/summary', currentIdTrimester,  randIdTheme]">Go somewhere</a>
+      </div>
+      <div class="col-4">
+        <a class="btn btn-primary" [routerLink]="['/summary', currentIdTrimester, nextIdTheme]">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>

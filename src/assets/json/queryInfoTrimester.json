@@ -1,0 +1,14 @@
+{
+  "trimesterId": 12,
+  "trimesterName": "2º Trimestre",
+  "nThemes": 5,
+  "nThemesCompletes": 2,
+  "themesDetails":
+  [
+    {"themeId": 121, "themeName": "theme 1", "isCompleted": 1},
+    {"themeId": 122, "themeName": "theme 2", "isCompleted": 1},
+    {"themeId": 123, "themeName": "theme 3", "isCompleted": 0},
+    {"themeId": 124, "themeName": "theme 4", "isCompleted": 0},
+    {"themeId": 125, "themeName": "theme 5", "isCompleted": 0}
+  ]
+}

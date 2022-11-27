@@ -1,0 +1,19 @@
+<div class="card details__summary__card">
+  <div class="card-header">
+    <h5>Sesiones del {{this.infoDetails?.trimesterName}}</h5>
+    <p>{{this.infoDetails?.nThemesCompletes}}/{{this.infoDetails?.nThemes}}</p>
+  </div>
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let theme of this.infoDetails.themesDetails let i = index" [attr.data-index]="i" [ngClass]="{'selected__theme': this.idTheme == theme?.themeId}">
+          <th scope="row">{{i+1}}</th>
+          <td>{{theme.themeName}}</td>
+          <td *ngIf="!theme?.isCompleted && this.idTheme != theme?.themeId">No completado</td>
+          <td *ngIf="theme?.isCompleted && this.idTheme != theme?.themeId">Completado</td>
+          <td [routerLink]="['/exercice', theme?.themeId]" *ngIf="this.idTheme == theme?.themeId">Reproducir</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

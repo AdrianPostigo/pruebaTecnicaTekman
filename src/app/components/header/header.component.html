@@ -1,0 +1,41 @@
+<aside *ngIf="this.toggle">
+  <div class="row">
+    <section class="col-6 background__sidemap"></section>
+    <section *ngIf="this.show" class="options__container">
+      <a class="icon__text" (click)="hide()"><img src="../../../assets/img/icons/arrow_back.png" alt="icon_arrow"></a>
+      <form novalidate #formTemplate="ngForm" (ngSubmit)="getDataForm(formTemplate)">
+        <div class="my-4">
+          <select name="language" id="language" ngModel class="form-select">
+            <option *ngFor="let langOption of optionsInfo.languageOptions" [value]="langOption?.lang" [selected]="langOption?.lang === optionsInfo?.currentLang">{{langOption?.language | titlecase}}</option>
+          </select>
+        </div>
+        <div class="my-4">
+          <select name="course" id="course" ngModel class="form-select">
+            <option *ngFor="let courseOption of this.optionsInfo.course" value="{{courseOption.idCourse}}">{{courseOption.courseName}}</option>
+          </select>
+        </div>
+        <input type="submit" class="btn btn-danger mt-2" value="Guardar cambios">
+      </form>
+      <input type="submit" class="btn btn-danger mt-2" value="Cerrar sin guardar" (click)="hide()">
+    </section>
+  </div>
+</aside>
+
+<header class="header">
+  <div class="row">
+    <div class="col-6">
+      <h1 class="title">Tarjetas</h1>
+    </div>
+    <div class="col-2 button shadow">
+      <a><i class="icon__menu"></i></a>
+    </div>
+    <div class="col-2 button shadow">
+      <a (click)="show()"><i class="icon__config"></i></a>
+    </div>
+    <div class="col-2 button shadow">
+      <a><i class="icon__exit"></i></a>
+    </div>
+  </div>
+</header>
+
+

@@ -1,0 +1,16 @@
+.icon__back_container{
+  padding-inline-start: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.icon__text{
+  text-decoration: none;
+  color: black;
+}
+
+.icon__arrow{
+  margin-right: 15px;
+}
+
